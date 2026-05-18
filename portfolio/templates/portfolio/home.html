@@ -1,0 +1,25 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="hero">
+
+    <h1>Hello, I'm Navee Saxena</h1>
+
+    <h2>Django Developer</h2>
+
+    <p>
+        I build responsive web applications using Django,
+        Python, HTML, CSS and JavaScript.
+    </p>
+
+  <a href="{% static 'resume/Naveen.cv.pdf' %}" download class="btn">
+    Download Resume
+</a>
+
+
+
+</section>
+
+{% endblock %}
