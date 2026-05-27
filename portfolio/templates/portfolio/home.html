@@ -5,21 +5,128 @@
 
 <section class="hero">
 
-    <h1>Hello, I'm Navee Saxena</h1>
+    <div class="hero-content">
+        <h1>Hello, I'm Naveen Saxena</h1>
 
-    <h2>Django Developer</h2>
+        <h2>Django Developer</h2>
 
-    <p>
-        I build responsive web applications using Django,
-        Python, HTML, CSS and JavaScript.
-    </p>
+        <p>
+            I build responsive web applications using Django,
+            Python, HTML, CSS and JavaScript.
+        </p>
 
-  <a href="{% static 'resume/Naveen.cv.pdf' %}" download class="btn">
-    Download Resume
-</a>
-
-
+        <a href="{% static 'resume/Naveen.cv.pdf' %}" download class="btn">
+            Download Resume
+        </a>
+    </div>
 
 </section>
 
+<!-- ================= FOOTER SECTION ================= -->
+
+<!-- ===== FOOTER START ===== -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Left Section -->
+        <div class="footer-box">
+            <div class="footer-logo">
+                <i class="fas fa-code"></i>
+                <h2>My <span>Portfolio</span></h2>
+            </div>
+
+            <p>
+                Building creative and responsive web experiences
+                with passion and precision.
+            </p>
+
+            <div class="social-icons">
+                <a href="https://github.com/naveensaxena29"><i class="fab fa-github"></i></a>
+                <!-- <a href="www.linkedin.com/in/naveen-saxena-66a52333b"><i class="fab fa-linkedin"></i></a> -->
+                <a href="https://www.linkedin.com/in/naveen-saxena-66a52333b/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="/about/"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="/projects/"><i class="fas fa-folder-open"></i> Projects</a></li>
+                <li><a href="/contact/"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Projects -->
+        <div class="footer-box">
+            <h3>Projects</h3>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-globe"></i>
+                        Web Application
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% url 'book_review' %}">
+                        <i class="fas fa-book"></i>
+                        Book Review
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% url 'cake_customize' %}">
+                        <i class="fas fa-birthday-cake"></i>
+                        Cake Customize
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% url 'food_project' %}">
+                        <i class="fas fa-utensils"></i>
+                        Food Project
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-box">
+            <h3>Stay Updated</h3>
+
+            <p>Subscribe to get updates on my latest projects.</p>
+
+            <form class="footer-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+        <p>© 2026 My Portfolio | Designed with ❤️ by Naveen</p>
+
+        <a href="#" class="top-btn">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+</footer>
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 {% endblock %}
+
+
+

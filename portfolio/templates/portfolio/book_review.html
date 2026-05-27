@@ -1,0 +1,50 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section class="project-details">
+
+    <div class="project-container">
+
+        <img src="{% static 'images/bookrs.jpeg' %}" alt="Book Review Project">
+
+        <div class="project-content">
+
+            <h1>Book Review System</h1>
+
+            <p>
+                A responsive web application where users can explore books,
+                write reviews, and rate their favorite titles with an attractive UI.
+            </p>
+
+            <h2>Technologies Used</h2>
+
+            <div class="tech-stack">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Django REST Framework</span>
+                <span>AWS</span>
+            </div>
+
+            <h2>Features</h2>
+
+            <ul>
+                <li>User Review & Rating System</li>
+                <li>Book Search Functionality</li>
+                <li>Responsive User Interface</li>
+                <li>REST API Integration</li>
+                <li>Cloud Deployment Support</li>
+            </ul>
+
+            <a href="/projects/" class="back-btn">Back to Projects</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

@@ -43,10 +43,12 @@
                     <span>Django</span>
                     <span>Python</span>
                     <span>Bootstrap</span>
+                    <span>Cloud Services</span>
                 </div>
 
-                <a href="#" class="project-btn">
-                    View Project
+                <!-- <a href="#" class="project-btn"> -->
+                <a href="{% url 'food_project' %}" class="project-btn">
+                    View case study
                 </a>
 
             </div>
@@ -57,25 +59,28 @@
 
         <div class="project-card">
 
-            <img src="{% static 'images/project2.jpg' %}" alt="Project">
+   <img src="{% static 'images/bookrs.jpeg' %}" alt="Project">
 
             <div class="project-content">
 
                 <h2>Book Review System</h2>
 
                 <p>
-                    Modern responsive fast-food web application with
-                    attractive UI and mobile-friendly design.
+                A responsive web application where users can explore books, write reviews, and rate their favorite titles.
+                Built with an attractive UI.
                 </p>
 
                 <div class="project-tech">
                     <span>HTML</span>
                     <span>CSS</span>
                     <span>JavaScript</span>
+                    <span>AWS</span>
+                    <span>Django REST Framework</span>
                 </div>
 
-                <a href="#" class="project-btn">
-                    View Project
+                <!-- <a href="#" class="project-btn"> -->
+                <a href="{% url 'book_review' %}" class="project-btn">
+                    View case study
                 </a>
 
             </div>
@@ -86,25 +91,26 @@
 
         <div class="project-card">
 
-            <img src="{% static 'images/project3.jpg' %}" alt="Project">
+            <img src="{% static 'images/sweetlayers.jpeg' %}" alt="Project">
 
             <div class="project-content">
 
-                <h2>QR Code Ge</h2>
+                <h2>Cake Customize</h2>
 
                 <p>
-                    Personal portfolio website showcasing skills,
-                    projects, achievements and contact information.
+                 A creative web application that allows users to design and customize cakes for special occasions with the help of you can order your wish  cake .
                 </p>
 
                 <div class="project-tech">
                     <span>Django</span>
                     <span>CSS</span>
                     <span>Python</span>
+                    <span>REST API</span>
                 </div>
 
-                <a href="#" class="project-btn">
-                    View Project
+                <!-- <a href="#" class="project-btn"> -->
+                <a href="{% url 'cake_customize' %}" class="project-btn">
+                    View case study
                 </a>
 
             </div>
@@ -116,3 +122,4 @@
 </section>
 
 {% endblock content %}
+

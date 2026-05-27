@@ -9,6 +9,8 @@ Contact
 
 <!-- ================= CONTACT SECTION ================= -->
 
+
+
 <section class="contact-section">
 
     <div class="contact-container">
@@ -43,33 +45,40 @@ Contact
 
         <!-- RIGHT SIDE -->
 
-        <div class="contact-form">
+       <div class="contact-form">
 
-            <form method="POST" enctype="multipart/form-data">
+    <form action="https://api.web3forms.com/submit" method="POST">
 
-                {% csrf_token %}
-                {{form.as_p}}
+        <input type="hidden"
+               name="access_key"
+               value="6a706ef5-4b9d-4c10-8c8a-3155fb61ec07">
 
-                <input type="text"
-                       name="name"
-                       placeholder="Your Name"
-                       required>
+        <input type="text"
+               name="name"
+               placeholder="Your Name"
+               required>
 
-                <input type="email"
-                       name="email"
-                       placeholder="Your Email"
-                       required>
+        <input type="email"
+               name="email"
+               placeholder="Your Email"
+               required>
 
-                <textarea name="message"
-                          placeholder="Message"
-                          required></textarea>
+        <input type="text"
+               name="subject"
+               placeholder="Enter Subject"
+               required>
 
-                <button type="submit">
-                    Send
-                </button>
+        <textarea name="message"
+                  placeholder="Message"
+                  required></textarea>
 
-            </form>
+        <button type="submit">
+            Send
+        </button>
 
+    </form>
+
+</div>
         </div>
 
     </div>

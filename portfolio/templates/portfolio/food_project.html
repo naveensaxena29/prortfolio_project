@@ -1,0 +1,49 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section class="project-details">
+
+    <div class="project-container">
+
+        <!-- <img src="{% static 'images/food.jpg' %}" alt="Food Project"> -->
+        <img src="{% static 'images/Resturan.png' %}" alt="Project">
+
+        <div class="project-content">
+            <h1>Fast Food Responsive Website</h1>
+
+            <p>
+                A Django-based restaurant website designed for online food ordering,
+                table booking, and menu management with a fully responsive interface.
+            </p>
+
+            <h2>Technologies Used</h2>
+
+            <div class="tech-stack">
+                <span>Django</span>
+                <span>Python</span>
+                <span>Bootstrap</span>
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+
+            <h2>Features</h2>
+
+            <ul>
+                <li>User Authentication System</li>
+                <li>Restaurant Food Menu</li>
+                <li>Table Booking Feature</li>
+                <li>Responsive Design</li>
+                <li>Admin Dashboard</li>
+            </ul>
+
+            <a href="/projects/" class="back-btn">Back to Projects</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

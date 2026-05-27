@@ -1,0 +1,49 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section class="project-details">
+
+    <div class="project-container">
+
+        <!-- <img src="{% static 'images/cake.jpeg' %}" alt="Cake Customize Project"> -->
+        <img src="{% static 'images/sweetlayers.jpeg' %}" alt="Project">
+
+        <div class="project-content">
+
+            <h1>Cake Customize Website</h1>
+
+            <p>
+                A creative web application that allows users to design and customize
+                cakes for special occasions and place online orders easily.
+            </p>
+
+            <h2>Technologies Used</h2>
+
+            <div class="tech-stack">
+                <span>Django</span>
+                <span>Python</span>
+                <span>CSS</span>
+                <span>REST API</span>
+            </div>
+
+            <h2>Features</h2>
+
+            <ul>
+                <li>Custom Cake Design</li>
+                <li>Online Cake Ordering</li>
+                <li>User Friendly Interface</li>
+                <li>Responsive Layout</li>
+                <li>Product Customization Options</li>
+            </ul>
+
+            <a href="/projects/" class="back-btn">Back to Projects</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
