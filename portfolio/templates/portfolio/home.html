@@ -3,24 +3,117 @@
 
 {% block content %}
 
-<section class="hero">
+<section class="about-section">
 
-    <div class="hero-content">
-        <h1>Hello, I'm Naveen Saxena</h1>
+    <div class="about-container">
 
-        <h2>Django Developer</h2>
+        <!-- LEFT IMAGE -->
+        <div class="about-image">
+           <img src="{% static 'images/naveenimg.png' %}" alt="Profile Image">
+          
+        </div>
 
-        <p>
-            I build responsive web applications using Django,
-            Python, HTML, CSS and JavaScript.
-        </p>
+        <!-- RIGHT CONTENT -->
+        <div class="about-content">
 
-        <a href="{% static 'resume/Naveen.cv.pdf' %}" download class="btn">
-            Download Resume
-        </a>
+            <h4>Hello, I'm</h4>
+
+            <h1>Naveen Saxena</h1>
+
+            <h2>Python & Django Developer</h2>
+
+            <p>
+                I am a passionate Python and Django developer who loves building
+                responsive and user-friendly web applications. I enjoy creating
+                modern websites with clean UI, powerful backend functionality,
+                and smooth user experience.
+            </p>
+
+            <p>
+                I have worked on projects like Restaurant Management Systems,
+                Fast Food Responsive Websites, and Portfolio Applications using
+                Django, HTML, CSS, JavaScript, and Bootstrap.
+            </p>
+
+            <!-- SKILLS -->
+            <div class="skills">
+
+                <span>Python</span>
+                <span>Django</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+
+            </div>
+
+            <!-- BUTTONS -->
+           <div class="hero-buttons">
+    <a href="{% static 'resume/Naveen.cv.pdf' %}" class="btn">
+        Download CV
+    </a>
+    <br>
+
+    <a href="/contact/" class="btn btn-outline">
+        Contact Me
+    </a>
+</div>
+
+        </div>
+
     </div>
 
 </section>
+
+<!-- ================= EXPERIENCE SECTION ================= -->
+
+<section class="experience-section">
+
+    <h2 class="section-title">My Achievements</h2>
+
+    <div class="experience-container">
+
+        <div class="experience-card">
+            <h3>Graphic Design Certificate</h3>
+            <p>
+                Earned certificate in Graphic Design during first year of college.
+            </p>
+        </div>
+
+        <div class="experience-card">
+            <h3>Django Projects</h3>
+            <p>
+                Developed responsive Django web applications with authentication,
+                admin panel, and database integration.
+            </p>
+        </div>
+
+        <div class="experience-card">
+            <h3>Frontend Development</h3>
+            <p>
+                Designed attractive UI using HTML, CSS, JavaScript and Bootstrap.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+    
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
+
+   
 
 <!-- ================= FOOTER SECTION ================= -->
 
